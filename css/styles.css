@@ -61,7 +61,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #FFF;
+  background: #FFF url(../media/header-shapes-mobile.png) 50% 50% no-repeat;
   border-bottom-left-radius: 6rem;
   padding: 0 24px;
 }
