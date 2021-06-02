@@ -1,0 +1,97 @@
+*,
+*::after
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+i {
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #E5E5E5;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  background: #FFF;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 100%;
+}
+
+#logo {
+  font-weight: 700;
+  color: #6070FF;
+  font-size: 1.6rem;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 18px;
+  padding-right: 6px;
+}
+
+.menu-line {
+  width: 18px;
+  height: 2px;
+  background: #6070FF;
+  border-radius: 2px;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FFF;
+  border-bottom-left-radius: 6rem;
+  padding: 0 24px;
+}
+
+header h1 {
+  color: #172B4D;
+  font-size: 4rem;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #344563;
+}
+
+header h2 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #7F8CFF;
+}
+
+.fab {
+  font-size: 2.2rem;
+  margin-right: 16px;
+  color: #505F79;
+}
+
+
+
