@@ -39,6 +39,7 @@ nav {
   font-weight: 700;
   color: #6070FF;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 #menu {
@@ -47,6 +48,7 @@ nav {
   justify-content: space-evenly;
   height: 18px;
   padding-right: 6px;
+  cursor: pointer;
 }
 
 .menu-line {
@@ -91,6 +93,10 @@ header h2 {
   font-size: 2.2rem;
   margin-right: 16px;
   color: #505F79;
+}
+
+#social-media-container {
+  cursor: pointer;
 }
 
 
