@@ -80,6 +80,7 @@ header p {
   font-size: 1.6rem;
   line-height: 24px;
   color: #344563;
+  margin-bottom: 2rem;
 }
 
 header h2 {
@@ -87,6 +88,7 @@ header h2 {
   font-size: 1.6rem;
   line-height: 24px;
   color: #7f8cff;
+  margin-bottom: 1rem;
 }
 
 .fab {
