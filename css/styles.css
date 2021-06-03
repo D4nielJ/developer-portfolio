@@ -10,12 +10,15 @@ html {
   font-size: 10px;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   display: inline;
 }
 
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
   text-decoration: none;
   color: inherit;
 }
