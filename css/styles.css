@@ -48,7 +48,7 @@ header {
   height: 100%;
 }
 
-#logo {
+.logo {
   font-weight: 700;
   color: #6070ff;
   font-size: 1.6rem;
@@ -110,6 +110,6 @@ header {
   color: #505f79;
 }
 
-#social-media-container {
+.social-media-container {
   cursor: pointer;
 }
