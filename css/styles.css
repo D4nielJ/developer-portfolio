@@ -247,3 +247,127 @@ header {
   line-height: 1.6rem;
   letter-spacing: 0.03em;
 }
+
+#about-myself {
+  background: #fff;
+  padding: 114px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-top-right-radius: 6rem;
+}
+
+.about-myself-top {
+  margin-bottom: 24px;
+}
+
+.about-myself-top h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+  margin-bottom: 12px;
+}
+
+.about-myself-top p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 12px;
+}
+
+#about-myself-social-media h2 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-bottom: 10px;
+}
+
+#about-myself-social-media {
+  margin-bottom: 12px;
+}
+
+.about-myself-skill-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill-list-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 72px;
+  cursor: pointer;
+}
+
+.skill-list-menu h2 {
+  font-size: 2rem;
+  color: #000;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.skill-list-menu i {
+  color: #5e6c84;
+  font-size: 1.6rem;
+  margin-right: 12px;
+}
+
+.skill-list-modifier-close {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.skill-list-menu-open {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.skill-list-menu-open li {
+  width: 100%;
+  background: #f7f7f9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.skill-icon {
+  flex: 0 1 48px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.skill-icon-javascript {
+  background: #f7f7f9 url(/media/icon-javascript.png) 50% no-repeat;
+}
+
+.skill-icon-html {
+  background: #f7f7f9 url(/media/icon-html5.png) 50% no-repeat;
+}
+
+.skill-icon-css {
+  background: #f7f7f9 url(/media/icon-css3.png) 50% no-repeat;
+}
+
+.skill-list-menu-open p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 20px;
+  color: #253858;
+}
