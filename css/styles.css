@@ -10,6 +10,16 @@ html {
   font-size: 10px;
 }
 
+ul, li {
+  list-style-type: none;
+  display: inline;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 i {
   font-style: normal;
 }
@@ -19,7 +29,7 @@ body {
   background: #e5e5e5;
 }
 
-nav {
+header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -58,7 +68,7 @@ nav {
   border-radius: 2px;
 }
 
-header {
+#about-me {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -68,14 +78,14 @@ header {
   padding: 0 24px;
 }
 
-header h1 {
+#about-me h1 {
   color: #172b4d;
   font-size: 4rem;
   line-height: 52px;
   font-weight: 700;
 }
 
-header p {
+#about-me p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 24px;
@@ -83,7 +93,7 @@ header p {
   margin-bottom: 2rem;
 }
 
-header h2 {
+#about-me h2 {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 24px;
