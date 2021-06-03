@@ -4,6 +4,8 @@
 
 > This is my portfolio as a web developer. It's the main tool in my Job Search, therefore the project I will spend the most hours working on. I hope you like it.
 
+![Screenshot of first page](media/portfolio-header-mobile "Screenshot of first page")
+
 ## Built With
 
 - HTML
