@@ -285,7 +285,7 @@ header {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.skill-list-menu-open {
+.skill-list-menu-open-list {
   width: 100%;
   display: flex;
   flex-direction: column;
