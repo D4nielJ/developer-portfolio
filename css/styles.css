@@ -45,6 +45,8 @@ button {
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #7f8cff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
