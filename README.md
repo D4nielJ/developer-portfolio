@@ -1,10 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Web Developer Portfolio
+## Web Developer Portfolio
 
 > This is my portfolio as a web developer. It's the main tool in my Job Search, therefore the project I will spend the most hours working on. I hope you like it.
 
-![Screenshot of first page](media/portfolio-header-mobile "Screenshot of first page")
+## Live Demo
+
+[Live Demo](https://d4nielj.github.io/developer-portfolio/) supported by Github Pages
 
 ## Built With
 
