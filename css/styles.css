@@ -314,15 +314,15 @@ header {
 }
 
 .skill-icon-javascript {
-  background: #f7f7f9 url(./media/icon-javascript.png) 50% no-repeat;
+  background: #f7f7f9 url(media/icon-javascript.png) 50% no-repeat;
 }
 
 .skill-icon-html {
-  background: #f7f7f9 url(./media/icon-html5.png) 50% no-repeat;
+  background: #f7f7f9 url(media/icon-html5.png) 50% no-repeat;
 }
 
 .skill-icon-css {
-  background: #f7f7f9 url(./media/icon-css3.png) 50% no-repeat;
+  background: #f7f7f9 url(media/icon-css3.png) 50% no-repeat;
 }
 
 .skill-list-menu-open p {
