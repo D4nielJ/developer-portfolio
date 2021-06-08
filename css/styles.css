@@ -201,12 +201,12 @@ header {
 }
 
 .work-card-tags {
-  display: flex;
-  align-items: center;
   margin-bottom: 24px;
 }
 
 .work-card-tags .tag {
+  display: block;
+  float: left;
   background: #ebebff;
   padding: 4px 12px;
   margin-right: 8px;
