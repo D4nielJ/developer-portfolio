@@ -389,3 +389,36 @@ header {
   background: #6070ff url(../media/contact-form-shapes-mobile.svg) 135% 50% no-repeat;
   border-top-left-radius: 6rem;
 }
+
+.contact-me-form h1 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  align-self: center;
+}
+
+.contact-me-form p {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+  align-self: center;
+  margin-bottom: 24px;
+}
+
+.form-input-box {
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.form-input-box-area {
+  height: 170px;
+}
