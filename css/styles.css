@@ -380,36 +380,37 @@ header {
 }
 
 .contact-me-form {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 5%;
+  padding: 50px 5%;
   background: #6070ff url(../media/contact-form-shapes-mobile.svg) 135% 50% no-repeat;
   border-top-left-radius: 6rem;
 }
 
 .contact-me-form h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 52px;
   color: #fff;
   align-self: center;
+  margin-bottom: 12px;
 }
 
 .contact-me-form p {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
   align-self: center;
   margin-bottom: 24px;
 }
 
 .form-input-box {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: 100%;
   margin-bottom: 12px;
@@ -421,4 +422,21 @@ header {
 
 .form-input-box-area {
   height: 170px;
+}
+
+.contact-me-form input:focus,
+.contact-me-form textarea:focus {
+  border: 1px solid #172b4d;
+}
+
+.contact-me-form input:focus-visible,
+.contact-me-form textarea:focus-visible {
+  outline: none;
+}
+
+.contact-me-form input::placeholder,
+.contact-me-form textarea::placeholder {
+  font-size: 1.5rem;
+  line-height: 24px;
+  color: #b3bac5;
 }
