@@ -374,3 +374,18 @@ header {
   color: #7f8cff;
   margin-bottom: 10px;
 }
+
+#contact-me {
+  background: #fff;
+}
+
+.contact-me-form {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 5%;
+  background: #6070ff url(../media/contact-form-shapes-mobile.svg) 135% 50% no-repeat;
+  border-top-left-radius: 6rem;
+}
