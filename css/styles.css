@@ -125,10 +125,9 @@ header {
 }
 
 .works-container {
-  display: grid;
-  grid-template: repeat(4, 4fr) / 1fr;
-  grid-row-gap: 88px;
-  margin: 140px 5%;
+  display: flex;
+  flex-direction: column;
+  margin: 120px 5% 32px 5%;
 }
 
 .work-card {
@@ -138,6 +137,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 5%;
+  margin-bottom: 88px;
 }
 
 .work-card img {
@@ -145,6 +145,11 @@ header {
   height: auto;
   border-radius: 8px;
   margin-bottom: 12px;
+}
+
+.work-card-data {
+  display: flex;
+  flex-direction: column;
 }
 
 .work-card-tittle {
