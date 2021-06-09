@@ -155,7 +155,7 @@ header {
 .work-card-tittle {
   font-weight: 700;
   font-size: 3.2rem;
-  line-height: 2.2rem;
+  line-height: 4rem;
   color: #172b4d;
   margin: 12px 0;
 }
@@ -204,12 +204,14 @@ header {
 }
 
 .work-card-tags {
-  margin-bottom: 24px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .work-card-tags .tag {
   display: block;
-  float: left;
   background: #ebebff;
   padding: 4px 12px;
   margin-right: 8px;
@@ -219,6 +221,7 @@ header {
   font-size: 1.2rem;
   line-height: 1.6rem;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 #about-myself {
@@ -354,7 +357,7 @@ header {
   line-height: 52px;
   color: #fff;
   align-self: center;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .contact-me-form p {
@@ -363,7 +366,7 @@ header {
   text-align: center;
   color: #ebebff;
   align-self: center;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
 }
 
 .form-input-box {
@@ -476,6 +479,97 @@ header {
     color: #344563;
   }
 
+  .fab {
+    font-size: 2.6rem;
+  }
+
+  .work-card {
+    flex-direction: row;
+    padding: 3%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .work-card-pair {
+    flex-direction: row-reverse;
+  }
+
+  .work-card img {
+    width: 40%;
+    height: fit-content;
+    margin-right: 22px;
+    margin-bottom: 0;
+  }
+
+  .work-card-data {
+    padding: 24px;
+    align-self: flex-start;
+  }
+
+  .work-card-info {
+    margin-bottom: 24px;
+  }
+
+  .work-card-description {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+  }
+
+  .about-myself-top {
+    flex: 0 1 35%;
+  }
+
+  .about-myself-top h1,
+  .about-myself-top p,
+  .about-myself-top .fab {
+    margin-bottom: 24px;
+  }
+
+  .about-myself-skill-list {
+    flex: 0 1 55%;
+  }
+
+  .skill-list-menu-open-list {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .skill-list-menu-open li {
+    max-width: 125px;
+    margin-right: 12px;
+    flex-direction: column;
+  }
+
+  .skill-icon {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .contact-me-form {
+    padding: 50px 15%;
+    align-items: center;
+    background: #6070ff url(../media/contact-form-bg-desktop.png) 50% 50% no-repeat;
+  }
+
+  .contact-me-form ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-me-form li {
+    width: 100%;
+  }
+  
+  .form-input-box {
+    border-radius: 0;
+  }
+
+  .form-button {
+    margin: 0 auto;
+  }
+
   #introduction {
     padding: 0 17%;
     border-bottom-left-radius: 12rem;
@@ -493,12 +587,37 @@ header {
     line-height: 28px;
   }
 
-  .fab {
-    font-size: 2.6rem;
+  #about-myself {
+    flex-direction: row;
+    padding: 114px 10%;
+    justify-content: space-between;
+    align-content: center;
   }
+
 }
 
 @media (min-width: 1200px) {
+
+  .work-card-tittle {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  .work-card-info h2 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+  }
+
+  .contact-me-form {
+    padding: 50px 30%;
+  }
+
+  .work-card-info h3 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+  }
 
   #introduction {
     background: #fff url(../media/header-bg.png) 50% 50% no-repeat;
