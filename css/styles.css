@@ -88,7 +88,7 @@ header {
 #nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
 .logo {
@@ -453,15 +453,12 @@ header {
 }
 
 @media (max-width: 767px) {
-
   .menu-list {
     display: none;
   }
-
 }
 
 @media (min-width: 768px) {
-  
   .menu-btn {
     display: none;
   }
@@ -496,7 +493,7 @@ header {
 
   .work-card img {
     width: 40%;
-    height: fit-content;
+    height: auto;
     margin-right: 22px;
     margin-bottom: 0;
   }
@@ -561,7 +558,7 @@ header {
   .contact-me-form li {
     width: 100%;
   }
-  
+
   .form-input-box {
     border-radius: 0;
   }
@@ -593,11 +590,9 @@ header {
     justify-content: space-between;
     align-content: center;
   }
-
 }
 
 @media (min-width: 1200px) {
-
   .work-card-tittle {
     font-size: 4rem;
     line-height: 5.2rem;
@@ -626,5 +621,4 @@ header {
   #introduction p {
     max-width: 80%;
   }
-  
 }
