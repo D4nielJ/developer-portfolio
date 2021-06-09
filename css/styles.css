@@ -341,17 +341,17 @@ header {
   justify-content: center;
   align-items: flex-start;
   padding: 50px 5%;
-  background: #6070ff url(../media/contact-form-shapes-mobile.svg) 135% 50% no-repeat;
+  background: #6070ff url(../media/contact-form-shapes-mobile.svg) 135% -100% no-repeat;
   border-top-left-radius: 6rem;
 }
 
-.contact-me-form h1 {
+.contact-me-form h2 {
   font-weight: bold;
   font-size: 4rem;
   line-height: 52px;
   color: #fff;
   align-self: center;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .contact-me-form p {
@@ -360,7 +360,7 @@ header {
   text-align: center;
   color: #ebebff;
   align-self: center;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 
 .form-input-box {
@@ -368,7 +368,7 @@ header {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   padding: 15px;
   font-size: 17px;
   line-height: 20px;
