@@ -464,7 +464,7 @@ header {
   }
 
   header {
-    padding: 20px 10%;
+    padding: 20px 12%;
   }
 
   .menu-list li {
@@ -553,9 +553,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 450px;
   }
 
   .contact-me-form li {
+    display: block;
     width: 100%;
   }
 
@@ -568,9 +570,9 @@ header {
   }
 
   #introduction {
-    padding: 0 17%;
+    padding: 0 20%;
     border-bottom-left-radius: 12rem;
-    background: #fff url(../media/header-bg.png) 90% 50% no-repeat;
+    background: #fff url(../media/header-bg.png) 50% 50% no-repeat;
   }
 
   #introduction h1 {
@@ -615,10 +617,10 @@ header {
   }
 
   #introduction {
-    background: #fff url(../media/header-bg.png) 50% 50% no-repeat;
+    background: #fff url(../media/header-bg.png) 70% 60% no-repeat;
   }
 
   #introduction p {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
