@@ -506,14 +506,6 @@ header {
     transition: color 0.2s ease;
   }
 
-  .menu-list li:hover {
-    color: #4151ff;
-  }
-
-  .menu-list li:active {
-    color: #2230d2;
-  }
-
   .fab {
     font-size: 2.6rem;
   }
@@ -630,6 +622,14 @@ header {
     justify-content: space-between;
     align-content: center;
   }
+
+  .menu-list li:hover {
+    color: #4151ff;
+  }
+
+  .menu-list li:active {
+    color: #2230d2;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -667,7 +667,7 @@ header {
   from {
     transform: rotate(-15deg);
   }
-  
+
   to {
     transform: rotate(15deg);
   }
