@@ -34,6 +34,7 @@ a:visited {
 }
 
 button {
+  cursor: pointer;
   display: flex;
   align-items: center;
   color: #6070ff;
@@ -48,6 +49,7 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
@@ -96,6 +98,15 @@ header {
   color: #6070ff;
   font-size: 1.6rem;
   cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.logo:hover {
+  color: #4151ff;
+}
+
+.logo:active {
+  color: #2230d2;
 }
 
 .menu-btn {
@@ -107,22 +118,35 @@ header {
   cursor: pointer;
 }
 
-.menu-line {
+.menu-btn div {
   width: 18px;
   height: 2px;
   background: #6070ff;
   border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-btn:hover div {
+  background: #4151ff;
+}
+
+.menu-btn:active div {
+  background: #2230d2;
 }
 
 .fab {
   font-size: 2.2rem;
   margin-right: 16px;
   color: #505f79;
-  transition: all 0.3s ease-out;
+  transition: color 0.2s ease;
 }
 
 .fab:hover {
-  color: #172b4d;
+  color: #4151ff;
+}
+
+.fab:active {
+  color: #2230d2;
 }
 
 .social-media-container {
@@ -352,8 +376,8 @@ header {
   justify-content: center;
   align-items: flex-start;
   padding: 50px 5%;
-  background: #6070ff url(../media/contact-form-shapes-mobile.svg) 135% -100% no-repeat;
   border-top-left-radius: 6rem;
+  background: #6070ff url(../media/contact-form-shapes-mobile.svg) 150% -50% no-repeat;
 }
 
 .contact-me-form h2 {
@@ -408,7 +432,7 @@ header {
 }
 
 .form-button:hover {
-  background: #4151ff;
+  background: #172b4d;
 }
 
 #introduction {
@@ -479,12 +503,15 @@ header {
     text-align: center;
     margin-left: 32px;
     color: #344563;
-    transition: all 0.3s ease-in;
+    transition: color 0.2s ease;,
   }
 
   .menu-list li:hover {
-    font-size: 1.6rem;
-    color: #172b4d;
+    color: #4151ff;
+  }
+
+  .menu-list li:active {
+    color: #2230d2;
   }
 
   .fab {
@@ -628,10 +655,20 @@ header {
   }
 
   #introduction {
-    background: #fff url(../media/header-bg.png) 70% 60% no-repeat;
+    background: #fff url(../media/header-bg.png) 50% 50% no-repeat;
   }
 
   #introduction p {
     max-width: 90%;
+  }
+}
+
+@keyframes background-rotation {
+  from {
+    transform: rotate(-15deg);
+  }
+  
+  to {
+    transform: rotate(15deg);
   }
 }
