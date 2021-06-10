@@ -474,6 +474,12 @@ header {
     text-align: center;
     margin-left: 32px;
     color: #344563;
+    transition: all 0.3s ease-in;
+  }
+
+  .menu-list li:hover {
+    font-size: 1.6rem;
+    color: #172b4d;
   }
 
   .fab {
