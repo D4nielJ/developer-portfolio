@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-[Live Demo](https://d4nielj.github.io/developer-portfolio/) supported by Github Pages
+[Live Demo](https://d4nielj.github.io/developer-portfolio/) supported by [Github Pages](https://pages.github.com/)
 
 ## Built With
 
