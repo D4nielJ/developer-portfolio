@@ -271,7 +271,7 @@ header {
   margin-bottom: 24px;
 }
 
-.about-myself-top h1 {
+.about-myself-top h2 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 52px;
@@ -465,7 +465,7 @@ header {
   margin-bottom: 2rem;
 }
 
-#introduction h2 {
+#introduction h3 {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 24px;
@@ -473,7 +473,7 @@ header {
   margin-bottom: 1rem;
 }
 
-#about-myself-social-media h2 {
+#about-myself-social-media h3 {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 24px;
@@ -550,7 +550,7 @@ header {
     flex: 0 1 35%;
   }
 
-  .about-myself-top h1,
+  .about-myself-top h2,
   .about-myself-top p,
   .about-myself-top .fab {
     margin-bottom: 24px;
