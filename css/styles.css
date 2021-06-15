@@ -153,6 +153,10 @@ header {
   cursor: pointer;
 }
 
+.social-media-container span {
+  display: none;
+}
+
 .works-container {
   display: flex;
   flex-direction: column;
@@ -203,13 +207,13 @@ header {
   background: #c1c7d0;
 }
 
-.work-card-info h2,
+.work-card-info h3,
 .work-card-info span,
-.work-card-info h3 {
+.work-card-info h4 {
   margin-right: 12px;
 }
 
-.work-card-info h2 {
+.work-card-info h3 {
   font-weight: 600;
   font-size: 1.3rem;
   line-height: 1.6rem;
@@ -217,7 +221,7 @@ header {
   text-transform: uppercase;
 }
 
-.work-card-info h3 {
+.work-card-info h4 {
   font-weight: 600;
   font-size: 1.3rem;
   line-height: 1.6rem;
@@ -241,7 +245,7 @@ header {
 
 .work-card-tags .tag {
   display: block;
-  background: #ebebff;
+  background: #f5f5ff;
   padding: 4px 12px;
   margin-right: 8px;
   border-radius: 8px;
@@ -267,7 +271,7 @@ header {
   margin-bottom: 24px;
 }
 
-.about-myself-top h1 {
+.about-myself-top h2 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 52px;
@@ -305,7 +309,7 @@ header {
   cursor: pointer;
 }
 
-.skill-list-menu h2 {
+.skill-list-menu h3 {
   font-size: 2rem;
   color: #000;
   line-height: 24px;
@@ -461,16 +465,16 @@ header {
   margin-bottom: 2rem;
 }
 
-#introduction h2 {
-  font-weight: 500;
+#introduction h3 {
+  font-weight: 600;
   font-size: 1.6rem;
   line-height: 24px;
   color: #7f8cff;
   margin-bottom: 1rem;
 }
 
-#about-myself-social-media h2 {
-  font-weight: 500;
+#about-myself-social-media h3 {
+  font-weight: 600;
   font-size: 1.6rem;
   line-height: 24px;
   color: #7f8cff;
@@ -546,7 +550,7 @@ header {
     flex: 0 1 35%;
   }
 
-  .about-myself-top h1,
+  .about-myself-top h2,
   .about-myself-top p,
   .about-myself-top .fab {
     margin-bottom: 24px;
@@ -599,6 +603,10 @@ header {
     margin: 0 auto;
   }
 
+  .sr-only {
+    display: none;
+  }
+
   #introduction {
     padding: 0 20%;
     border-bottom-left-radius: 12rem;
@@ -638,7 +646,7 @@ header {
     line-height: 5.2rem;
   }
 
-  .work-card-info h2 {
+  .work-card-info h3 {
     font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: 600;
@@ -648,7 +656,7 @@ header {
     padding: 50px 30%;
   }
 
-  .work-card-info h3 {
+  .work-card-info h4 {
     font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: 600;
