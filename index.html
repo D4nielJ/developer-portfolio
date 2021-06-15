@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H95JQJR2JY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-H95JQJR2JY');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fitno">
     <title>D4niel J Portofolio</title>    
     <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen"/>
@@ -9,15 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
     <script src="https://kit.fontawesome.com/d5e3631d2a.js" crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H95JQJR2JY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-H95JQJR2JY');
-    </script>
 </head>
 <body>
   <!--Header and Introduction-->
@@ -244,8 +243,7 @@
                     <input id="user_email" type="email" class="form-input-box" name="user_email" placeholder="Enter your e-mail here" required>
                 </li>
                 <li>
-                    <label for="user_message" class="sr-only">Write your message here:</label>
-                    <textarea id="user_mesagge" class="form-input-box form-input-box-area" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
+                    <textarea class="form-input-box form-input-box-area" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
                 </li>
                 <li>
                     <button class="form-button" type="submit">Get in touch</button>
