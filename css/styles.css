@@ -153,6 +153,10 @@ header {
   cursor: pointer;
 }
 
+.social-media-container span {
+  display: none;
+}
+
 .works-container {
   display: flex;
   flex-direction: column;
