@@ -603,6 +603,10 @@ header {
     margin: 0 auto;
   }
 
+  .sr-only {
+    display: none;
+  }
+
   #introduction {
     padding: 0 20%;
     border-bottom-left-radius: 12rem;

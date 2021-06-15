@@ -55,9 +55,9 @@
       <div id="social-media">
         <h3>LET’S CONNECT</h3>
         <ul class="social-media-container">
-          <li><a href="#"><i class="fab fa-twitter"></i><span class="social-media-description">Twitter</span></a></li>
-          <li><a href="#"><i class="fab fa-github"></i><span class="social-media-description">Github</span></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i><span class="social-media-description">Instagram</span></a></li>
+          <li><a href="#"><i aria-hidden="true" title="Twitter link" class="fab fa-twitter"></i><span class="social-media-description">Twitter link</span></a></li>
+          <li><a href="#"><i aria-hidden="true" title="Github link" class="fab fa-github"></i><span class="social-media-description">Github link</span></a></li>
+          <li><a href="#"><i aria-hidden="true" title="Instagram link" class="fab fa-instagram"></i><span class="social-media-description">Instagram link</span></a></li>
         </ul>
       </div>
     </section>
@@ -184,9 +184,9 @@
         <div id="about-myself-social-media">
           <h3>LET’S CONNECT</h3>
           <ul class="social-media-container">
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i aria-hidden="true" title="Twitter link" class="fab fa-twitter"></i><span class="social-media-description">Twitter link</span></a></li>
+            <li><a href="#"><i aria-hidden="true" title="Github link" class="fab fa-github"></i><span class="social-media-description">Github link</span></a></li>
+            <li><a href="#"><i aria-hidden="true" title="Instagram link" class="fab fa-instagram"></i><span class="social-media-description">Instagram link</span></a></li>
           </ul>
         </div>
         <button type="button" class="about-myself-resume">Get my resume</button>
@@ -236,13 +236,16 @@
             I’d love to help with it</p>
             <ul>
                 <li>
-                    <input type="text" class="form-input-box" name="user_name" placeholder="Enter your name here" required maxlength="30">
+                    <label for="user_name" class="sr-only">Write your name here:</label>
+                    <input id="user_name" type="text" class="form-input-box" name="user_name" placeholder="Enter your name here" required maxlength="30">
                 </li>
                 <li>
-                    <input type="email" class="form-input-box" name="user_email" placeholder="Enter your e-mail here" required>
+                    <label for="user_email" class="sr-only">Write your e-mail here:</label>
+                    <input id="user_email" type="email" class="form-input-box" name="user_email" placeholder="Enter your e-mail here" required>
                 </li>
                 <li>
-                    <textarea class="form-input-box form-input-box-area" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
+                    <label for="user_message" class="sr-only">Write your message here:</label>
+                    <textarea id="user_mesagge" class="form-input-box form-input-box-area" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
                 </li>
                 <li>
                     <button class="form-button" type="submit">Get in touch</button>
