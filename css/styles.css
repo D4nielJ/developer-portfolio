@@ -203,13 +203,13 @@ header {
   background: #c1c7d0;
 }
 
-.work-card-info h2,
+.work-card-info h3,
 .work-card-info span,
-.work-card-info h3 {
+.work-card-info h4 {
   margin-right: 12px;
 }
 
-.work-card-info h2 {
+.work-card-info h3 {
   font-weight: 600;
   font-size: 1.3rem;
   line-height: 1.6rem;
@@ -217,7 +217,7 @@ header {
   text-transform: uppercase;
 }
 
-.work-card-info h3 {
+.work-card-info h4 {
   font-weight: 600;
   font-size: 1.3rem;
   line-height: 1.6rem;
@@ -638,7 +638,7 @@ header {
     line-height: 5.2rem;
   }
 
-  .work-card-info h2 {
+  .work-card-info h3 {
     font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: 600;
@@ -648,7 +648,7 @@ header {
     padding: 50px 30%;
   }
 
-  .work-card-info h3 {
+  .work-card-info h4 {
     font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: 600;
