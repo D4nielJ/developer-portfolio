@@ -502,8 +502,9 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(96, 112, 255, 0.9);
+    background: rgba(68, 86, 255, 0.8);
     z-index: 3;
+    backdrop-filter: blur(3px);
   }
   
   .menu-list ul {
@@ -528,6 +529,10 @@ header {
 
   header {
     padding: 20px 12%;
+  }
+
+  .menu-list {
+    display: flex;
   }
 
   .menu-list li {
