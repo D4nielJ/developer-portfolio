@@ -10,3 +10,4 @@ function openMenu() {
 }
 
 hamburguerIcon.addEventListener('click',openMenu);
+closeIcon.addEventListener('click',openMenu);
