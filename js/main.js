@@ -1,5 +1,7 @@
 // Selectors
 
+const body = document.querySelector('body');
+
 const hamburguerIcon = document.querySelector('.menu-btn-open');
 const closeIcon = document.querySelector('.menu-btn-close');
 const menuMobile = document.querySelector('.menu-list');
@@ -11,6 +13,7 @@ function openMenu() {
   hamburguerIcon.classList.toggle('hidden');
   closeIcon.classList.toggle('hidden');
   menuMobile.classList.toggle('hidden');
+  body.classList.toggle('overflow-hidden');
 }
 
 // Events

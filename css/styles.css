@@ -140,6 +140,10 @@ header {
   background: #2230d2;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .hidden {
   display: none;
 }
