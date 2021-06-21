@@ -504,22 +504,22 @@ header {
     right: 0;
     background: rgba(68, 86, 255, 0.8);
     z-index: 3;
-    backdrop-filter: blur(3px); 
+    backdrop-filter: blur(3px);
   }
-  
+
   .menu-list ul {
     display: flex;
     flex-direction: column;
     color: white;
     padding: 80px 10%;
   }
-  
+
   .menu-list ul li {
     margin-bottom: 24px;
     font-weight: 600;
     font-size: 3.2rem;
     line-height: 44px;
-  }  
+  }
 }
 
 @media (min-width: 768px) {
