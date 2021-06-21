@@ -8,13 +8,13 @@ const menuMobileLi = menuMobile.querySelectorAll('li');
 // Function that allows opening and closing the menu
 
 function openMenu() {
-	hamburguerIcon.classList.toggle('hidden');
-	closeIcon.classList.toggle('hidden');
-	menuMobile.classList.toggle('hidden');
+  hamburguerIcon.classList.toggle('hidden');
+  closeIcon.classList.toggle('hidden');
+  menuMobile.classList.toggle('hidden');
 }
 
 // Events
 
 hamburguerIcon.addEventListener('click', openMenu);
 closeIcon.addEventListener('click', openMenu);
-menuMobileLi.forEach(Element => Element.addEventListener('click', openMenu));
+menuMobileLi.forEach((Element) => Element.addEventListener('click', openMenu));
