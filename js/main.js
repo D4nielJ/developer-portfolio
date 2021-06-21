@@ -17,6 +17,4 @@ function openMenu() {
 
 hamburguerIcon.addEventListener('click', openMenu);
 closeIcon.addEventListener('click', openMenu);
-menuMobileLi.forEach(Element => Element.addEventListener('click', openMenu))
-
-// menuMobileLi.addEventListener('click', openMenu);
+menuMobileLi.forEach(Element => Element.addEventListener('click', openMenu));
