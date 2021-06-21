@@ -118,6 +118,12 @@ header {
   cursor: pointer;
 }
 
+.menu-btn-close {
+  z-index: 4;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
 .menu-btn div {
   width: 18px;
   height: 2px;
@@ -132,6 +138,14 @@ header {
 
 .menu-btn:active div {
   background: #2230d2;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
 }
 
 .fab {
@@ -485,9 +499,30 @@ header {
   background: #fff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .menu-list {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(68, 86, 255, 0.8);
+    z-index: 3;
+    backdrop-filter: blur(3px);
+  }
+
+  .menu-list ul {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 80px 10%;
+  }
+
+  .menu-list ul li {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 44px;
   }
 }
 
@@ -498,6 +533,10 @@ header {
 
   header {
     padding: 20px 12%;
+  }
+
+  .menu-list {
+    display: flex;
   }
 
   .menu-list li {
