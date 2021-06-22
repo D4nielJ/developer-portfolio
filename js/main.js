@@ -121,7 +121,8 @@ function openModal(project) {
     li.innerHTML = `<li class="modal__tag">${modalInformation[buttonSeeProject.indexOf(project.target)].tech[i]}</li>`;
     modalTech.appendChild(li);
   }
-
+  modalSeeLive.href = modalInformation[buttonSeeProject.indexOf(project.target)].liveHREF;
+  modalSeeSrc.href = modalInformation[buttonSeeProject.indexOf(project.target)].sourceHREF;
   modal.classList.toggle('modal--active');
   modalWindow.classList.toggle('modal__window--transition');
   body.classList.toggle('overflow-hidden');
