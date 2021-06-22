@@ -4,15 +4,22 @@ const body = document.querySelector('body');
 const hamburguerIcon = document.querySelector('.menu-btn-open');
 const closeIcon = document.querySelector('.menu-btn-close');
 const menuMobile = document.querySelector('.menu-list');
-const menuMobileLi = menuMobile.querySelectorAll('li');
+const menuMobileLi = menuMobile.querySelectorAll('li a');
 
 // Function that allows opening and closing the menu
 
-function openMenu() {
+function openMenu(e) {  
   hamburguerIcon.classList.toggle('hidden');
   closeIcon.classList.toggle('hidden');
   menuMobile.classList.toggle('hidden');
-  body.classList.toggle('overflow-hidden');
+  let mediaQuerie = window.matchMedia("(max-width: 767px)");
+  if (mediaQuerie.matches) {
+    body.classList.toggle('overflow-hidden');
+  }
+  e.preventDefault();
+  document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({
+    behavior: 'smooth',
+  });
 }
 
 // Events
@@ -128,7 +135,7 @@ function openModal(project) {
   body.classList.toggle('overflow-hidden');
 }
 
-function closeModal(project) {
+function closeModal() {
   modal.classList.toggle('modal--active');
   modalWindow.classList.toggle('modal__window--transition');
   body.classList.toggle('overflow-hidden');
