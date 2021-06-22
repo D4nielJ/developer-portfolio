@@ -137,12 +137,18 @@ header {
   background: #4151ff;
 }
 
-.menu-btn:ctive div {
+.menu-btn:active div {
   background: #2230d2;
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.skill-list-menu i {
+  color: #5e6c84;
+  font-size: 1.6rem;
+  margin-right: 12px;
 }
 
 .social-media-container i {
@@ -302,7 +308,7 @@ header {
 }
 
 .modal__window--transition {
-  top: 0px;
+  top: 0;
 }
 
 .modal__header {
@@ -511,12 +517,6 @@ header {
   color: #000;
   line-height: 24px;
   font-weight: 500;
-}
-
-.skill-list-menu i {
-  color: #5e6c84;
-  font-size: 1.6rem;
-  margin-right: 12px;
 }
 
 .skill-list-modifier-close {
@@ -771,7 +771,7 @@ header {
     font-size: 1.6rem;
     margin-bottom: 24px;
   }
-  
+
   .modal__window {
     width: 85%;
     padding: 24px 2%;
@@ -897,7 +897,7 @@ header {
     line-height: 2.4rem;
     font-weight: 600;
   }
-  
+
   .modal__window {
     width: 50%;
   }

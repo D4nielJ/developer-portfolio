@@ -9,11 +9,11 @@ const navLogoA = document.querySelector('.logo a');
 
 // Function that allows opening and closing the menu
 
-function openMenu(e) {  
+function openMenu(e) {
   hamburguerIcon.classList.toggle('hidden');
   closeIcon.classList.toggle('hidden');
   menuMobile.classList.toggle('hidden');
-  let mediaQuerie = window.matchMedia("(max-width: 767px)");
+  const mediaQuerie = window.matchMedia('(max-width: 767px)');
   if (mediaQuerie.matches) {
     body.classList.toggle('overflow-hidden');
   }
@@ -133,9 +133,13 @@ function openModal(project) {
   modalYear.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].year;
   modalImg.src = modalInformation[buttonSeeProject.indexOf(project.target)].imgSrc;
   modalDesc.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].desc;
-  modalTech.innerHTML = "";  
-  for (let i = 0; i < modalInformation[buttonSeeProject.indexOf(project.target)].tech.length; i++) {
-    let li = document.createElement('li');
+  modalTech.innerHTML = '';
+  for (
+    let i = 0;
+    i < modalInformation[buttonSeeProject.indexOf(project.target)].tech.length;
+    i += 1
+  ) {
+    const li = document.createElement('li');
     li.innerHTML = `<li class="modal__tag">${modalInformation[buttonSeeProject.indexOf(project.target)].tech[i]}</li>`;
     modalTech.appendChild(li);
   }
@@ -155,6 +159,6 @@ function closeModal() {
 // Events
 
 buttonSeeProject.forEach((Element) => {
-  Element.addEventListener('click', openModal)
+  Element.addEventListener('click', openModal);
 });
 buttonClose.addEventListener('click', closeModal);
