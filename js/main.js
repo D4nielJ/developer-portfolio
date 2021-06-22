@@ -5,6 +5,7 @@ const hamburguerIcon = document.querySelector('.menu-btn-open');
 const closeIcon = document.querySelector('.menu-btn-close');
 const menuMobile = document.querySelector('.menu-list');
 const menuMobileLi = menuMobile.querySelectorAll('li a');
+const navLogoA = document.querySelector('.logo a');
 
 // Function that allows opening and closing the menu
 
@@ -22,11 +23,21 @@ function openMenu(e) {
   });
 }
 
+// Function to scroll to the top
+
+function scrollToTop(e) {
+  e.preventDefault();
+  document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({
+    behavior: 'smooth',
+  });
+}
+
 // Events
 
 hamburguerIcon.addEventListener('click', openMenu);
 closeIcon.addEventListener('click', openMenu);
 menuMobileLi.forEach((Element) => Element.addEventListener('click', openMenu));
+navLogoA.addEventListener('click', scrollToTop);
 
 // M O D A L S
 // Information for Modals through objects
