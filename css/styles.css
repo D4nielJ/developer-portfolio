@@ -414,7 +414,43 @@ header {
 
 .modal__button {
   margin-right: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #6070ff;
+  background: #fff;
+  font-size: 1.7rem;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #7f8cff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
+
+.modal__button:hover {
+  border: none;
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px #4053fc3d;
+}
+
+.modal__button:active {
+  border: none;
+  background: #2230d2;
+  color: #fff;
+}
+
+.modal__button:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
+
+
 
 .modal__icon-button {
   margin-left: 6px;
