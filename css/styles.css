@@ -28,6 +28,7 @@ li {
 
 a,
 a:hover,
+a:active,
 a:visited {
   text-decoration: none;
   color: inherit;
@@ -136,7 +137,7 @@ header {
   background: #4151ff;
 }
 
-.menu-btn:active div {
+.menu-btn:ctive div {
   background: #2230d2;
 }
 
@@ -432,11 +433,8 @@ header {
   transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.modal__button:hover {
-  border: none;
-  background: #6070ff;
-  color: #fff;
-  box-shadow: 0 8px 16px #4053fc3d;
+.modal__button:visited {
+  color: #6070ff;
 }
 
 .modal__button:active {
@@ -445,12 +443,12 @@ header {
   color: #fff;
 }
 
-.modal__button:disabled {
-  border: 1px solid #c1c7d0;
-  color: #5e6c84;
+.modal__button:hover {
+  border: none;
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px #4053fc3d;
 }
-
-
 
 .modal__icon-button {
   margin-left: 6px;

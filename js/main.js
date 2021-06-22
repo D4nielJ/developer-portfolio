@@ -38,7 +38,7 @@ const modalInformation = [
       'css',
       'javaScript',
     ],
-    liveHREF: 'https://d4nielj.github.io/developer-portfolio/',
+    liveHREF: 'https://d4nielj.github.io/hello-microverse/',
     sourceHREF: 'https://github.com/D4nielJ/developer-portfolio',
   }, {
     title: 'Multi-Post Stories',
@@ -53,7 +53,7 @@ const modalInformation = [
       'css',
       'javaScript',
     ],
-    liveHREF: 'https://d4nielj.github.io/developer-portfolio/',
+    liveHREF: 'https://d4nielj.github.io/hello-microverse/',
     sourceHREF: 'https://github.com/D4nielJ/developer-portfolio',
   }, {
     title: 'Facebook 360',
@@ -68,7 +68,7 @@ const modalInformation = [
       'css',
       'javaScript',
     ],
-    liveHREF: 'https://d4nielj.github.io/developer-portfolio/',
+    liveHREF: 'https://d4nielj.github.io/hello-microverse/',
     sourceHREF: 'https://github.com/D4nielJ/developer-portfolio',
   }, {
     title: 'Uber Navigation',
@@ -83,18 +83,18 @@ const modalInformation = [
       'css',
       'javaScript',
     ],
-    liveHREF: 'https://d4nielj.github.io/developer-portfolio/',
+    liveHREF: 'https://d4nielj.github.io/hello-microverse/',
     sourceHREF: 'https://github.com/D4nielJ/developer-portfolio',
   },
 ];
 
 // Selectors for Modals
 
-const modal = document.querySelector('#modal');
-const modalWindow = document.querySelector('.modal__window');
 const buttonSeeProject = Array.from(document.querySelectorAll('.work-card-seeProject'));
 const buttonClose = document.querySelector('.modal__icon-close');
 
+const modal = document.querySelector('#modal');
+const modalWindow = document.querySelector('.modal__window');
 const modalTitle = document.querySelector('.modal__title');
 const modalCompany = document.querySelector('.modal__company');
 const modalRole = document.querySelector('.modal__role');
