@@ -36,10 +36,10 @@ const modalInformation = [
       'html',
       'ruby on Rails',
       'css',
-      'javaScript'
-    ]
+      'javaScript',
+    ],
     liveHREF: 'https://d4nielj.github.io/developer-portfolio/',
-    sourceHREF 'https://github.com/D4nielJ/developer-portfolio',
+    sourceHREF: 'https://github.com/D4nielJ/developer-portfolio',
   }, {
     title: 'Multi-Post Stories',
     company: 'Facebook',
@@ -51,10 +51,10 @@ const modalInformation = [
       'html',
       'ruby on Rails',
       'css',
-      'javaScript'
-    ]
+      'javaScript',
+    ],
     liveHREF: 'https://d4nielj.github.io/developer-portfolio/',
-    sourceHREF 'https://github.com/D4nielJ/developer-portfolio',
+    sourceHREF: 'https://github.com/D4nielJ/developer-portfolio',
   }, {
     title: 'Facebook 360',
     company: 'Facebook',
@@ -66,10 +66,10 @@ const modalInformation = [
       'html',
       'ruby on Rails',
       'css',
-      'javaScript'
-    ]
+      'javaScript',
+    ],
     liveHREF: 'https://d4nielj.github.io/developer-portfolio/',
-    sourceHREF 'https://github.com/D4nielJ/developer-portfolio',
+    sourceHREF: 'https://github.com/D4nielJ/developer-portfolio',
   }, {
     title: 'Uber Navigation',
     company: 'Uber',
@@ -81,23 +81,53 @@ const modalInformation = [
       'html',
       'ruby on Rails',
       'css',
-      'javaScript'
-    ]
+      'javaScript',
+    ],
     liveHREF: 'https://d4nielj.github.io/developer-portfolio/',
-    sourceHREF 'https://github.com/D4nielJ/developer-portfolio',
-  }
-]
+    sourceHREF: 'https://github.com/D4nielJ/developer-portfolio',
+  },
+];
 
 // Selectors for Modals
 
 const modal = document.querySelector('#modal');
 const modalWindow = document.querySelector('.modal__window');
-const buttonSeeProject = document.querySelectorAll('.work-card-seeProject');
+const buttonSeeProject = Array.from(document.querySelectorAll('.work-card-seeProject'));
 const buttonClose = document.querySelector('.modal__icon-close');
+
+const modalTitle = document.querySelector('.modal__title');
+const modalCompany = document.querySelector('.modal__company');
+const modalRole = document.querySelector('.modal__role');
+const modalYear = document.querySelector('.modal__year');
+const modalImg = document.querySelector('.modal__img');
+const modalDesc = document.querySelector('.modal__desc');
+const modalTech = document.querySelector('.modal__tech');
+const modalSeeLive = document.querySelector('.modal__button--see-live');
+const modalSeeSrc = document.querySelector('.modal__button--see-src');
 
 // Function openModal
 
-function openModal() {
+function openModal(project) {
+  // let projectIndex = buttonSeeProject.indexOf('project');
+  modalTitle.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].title;
+  modalCompany.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].company;
+  modalRole.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].role;
+  modalYear.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].year;
+  modalImg.src = modalInformation[buttonSeeProject.indexOf(project.target)].imgSrc;
+  modalDesc.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].desc;
+  modalTech.innerHTML = "";  
+  for (let i = 0; i < modalInformation[buttonSeeProject.indexOf(project.target)].tech.length; i++) {
+    let li = document.createElement('li');
+    li.innerHTML = `<li class="modal__tag">${modalInformation[buttonSeeProject.indexOf(project.target)].tech[i]}</li>`;
+    modalTech.appendChild(li);
+  }
+
+  modal.classList.toggle('modal--active');
+  modalWindow.classList.toggle('modal__window--transition');
+  body.classList.toggle('overflow-hidden');
+}
+
+function closeModal(project) {
   modal.classList.toggle('modal--active');
   modalWindow.classList.toggle('modal__window--transition');
   body.classList.toggle('overflow-hidden');
@@ -105,5 +135,7 @@ function openModal() {
 
 // Events
 
-buttonSeeProject.forEach((Element) => Element.addEventListener('click', openModal));
-buttonClose.addEventListener('click', openModal);
+buttonSeeProject.forEach((Element) => {
+  Element.addEventListener('click', openModal)
+});
+buttonClose.addEventListener('click', closeModal);
