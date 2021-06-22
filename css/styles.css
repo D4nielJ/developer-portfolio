@@ -271,6 +271,28 @@ header {
   margin-bottom: 10px;
 }
 
+#modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__window {
+  background: #fff;
+  padding: ;
+}
+
+.modal__img {
+  width: 100%;
+  height: auto;
+}
+
 #about-myself {
   background: #fff;
   padding: 114px 5%;
