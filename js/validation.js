@@ -10,13 +10,13 @@ function isItUppercase(value) {
     }
   }
 
-// form.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {
 
-//     if (isItUppercase(email.value)) {
-//         error.classList.remove('form__error-msg--active');
-//     }else {
-//         e.preventDefault();
-//         error.classList.add('form__error-msg--active');
-//     }
+    if (isItUppercase(email.value)) {
+        error.classList.remove('form__error-msg--active');
+    }else {
+        e.preventDefault();
+        error.classList.add('form__error-msg--active');
+    }
     
-// })
+})
