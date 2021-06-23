@@ -52,7 +52,6 @@ const modalInformation = [
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
     tech: [
       'html',
-      'ruby on Rails',
       'css',
       'javaScript',
     ],
@@ -162,3 +161,20 @@ buttonSeeProject.forEach((Element) => {
   Element.addEventListener('click', openModal);
 });
 buttonClose.addEventListener('click', closeModal);
+
+
+// value1 = "mayus@gmail.com" // Should return match
+// value2 = "minus" // Should return null
+// value3 = "MiXeD" // Should return match
+
+// function isItUppercase(value) {
+//   if (value.match(/^[a-z@.]*$/)) {
+//     return "Okay";
+//   } else {
+//     return "Not okay"
+//   }
+// }
+
+// console.log(isItUppercase(value1));
+// console.log(isItUppercase(value2));
+// console.log(isItUppercase(value3));

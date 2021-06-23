@@ -283,10 +283,12 @@ header {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 5rem 0;
   transition: visibility 0s, opacity 0.7s ease-out;
   opacity: 0%;
   visibility: hidden;
+  overflow-y: scroll;
 }
 
 .modal--active {
@@ -420,7 +422,6 @@ header {
 }
 
 .modal__button {
-  margin-right: 12px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -454,6 +455,10 @@ header {
   background: #6070ff;
   color: #fff;
   box-shadow: 0 8px 16px #4053fc3d;
+}
+
+.modal__button--see-live {
+  margin-right: 12px;
 }
 
 .modal__icon-button {
