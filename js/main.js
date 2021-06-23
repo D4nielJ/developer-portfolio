@@ -11,7 +11,7 @@ const navLogoA = document.querySelector('.logo a');
 
 // Function that allows opening and closing the menu
 
-function openMenu(e) {
+function openMenu() {
   hamburguerIcon.classList.toggle('hidden');
   closeIcon.classList.toggle('hidden');
   menuMobile.classList.toggle('hidden');
@@ -21,7 +21,7 @@ function openMenu(e) {
       Element.classList.toggle('menu-list__links--on');
     }, timeOutTime);
     timeOutTime += 50;
-  });  
+  });
   const mediaQuerie = window.matchMedia('(max-width: 767px)');
   if (mediaQuerie.matches) {
     body.classList.toggle('overflow-hidden');
@@ -33,9 +33,9 @@ function closeMenu(e) {
   hamburguerIcon.classList.toggle('hidden');
   closeIcon.classList.toggle('hidden');
   menuMobile.classList.toggle('hidden');
-  menuMobileLi.forEach((Element) => {    
-      Element.classList.toggle('menu-list__links--on');
-  });  
+  menuMobileLi.forEach((Element) => {
+    Element.classList.toggle('menu-list__links--on');
+  });
   const mediaQuerie = window.matchMedia('(max-width: 767px)');
   if (mediaQuerie.matches) {
     body.classList.toggle('overflow-hidden');
