@@ -271,9 +271,12 @@
                     <label for="user_name" class="sr-only">Write your name here:</label>
                     <input id="user_name" type="text" class="form-input-box" name="user_name" placeholder="Enter your name here" required maxlength="30">
                 </li>
-                <li>
+                <li class="form__email-li">
                     <label for="user_email" class="sr-only">Write your e-mail here:</label>
                     <input id="user_email" type="email" class="form-input-box" name="user_email" placeholder="Enter your e-mail here" required>
+                </li>
+                <li class="form__error-msg">
+                    <p><i class="fas fa-exclamation-triangle"></i>Email must be written in lowercases</p>
                 </li>
                 <li>
                     <textarea class="form-input-box form-input-box-area" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
@@ -285,5 +288,6 @@
       </form>
     </section>
     <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 </html>

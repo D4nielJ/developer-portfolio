@@ -641,6 +641,32 @@ header {
   background: #172b4d;
 }
 
+.form__error-msg {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  transition: position 0s, visibility 0s, top 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.form__error-msg--active {
+  position: relative;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.form__error-msg p {
+  font-size: 1.4rem;
+  padding: 6px 12px;
+  background: #172b4d;
+  border-radius: 8px;
+}
+
+.form__error-msg i {
+  margin-right: 8px;
+  color: #ff2b35;
+}
+
 .hidden {
   display: none;
 }
