@@ -643,19 +643,22 @@ header {
 
 .form__error-msg {
   position: absolute;
-  top: -20px;
+  top: -30px;
   opacity: 0;
+  margin-bottom: 6px;
   transition: position 0s, visibility 0s, top 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 .form__error-msg--active {
   position: relative;
-  top: 0;
+  top: -10px;
   visibility: visible;
   opacity: 1;
+  
 }
 
 .form__error-msg p {
+  margin: inherit;
   font-size: 1.4rem;
   padding: 6px 12px;
   background: #172b4d;
@@ -860,10 +863,6 @@ header {
   .contact-me-form li {
     display: block;
     width: 100%;
-  }
-
-  .form-input-box {
-    border-radius: 0;
   }
 
   .form-button {

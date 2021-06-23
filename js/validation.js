@@ -4,5 +4,6 @@ const error = document.querySelector('.form__error-msg');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    error.classList.remove('form__error-msg--active')
     error.classList.add('form__error-msg--active');
 })
