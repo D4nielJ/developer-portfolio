@@ -1,23 +1,45 @@
+// MAIN MENU FOR NAVBAR MOBILE
 // Selectors
 
 const body = document.querySelector('body');
 const hamburguerIcon = document.querySelector('.menu-btn-open');
 const closeIcon = document.querySelector('.menu-btn-close');
 const menuMobile = document.querySelector('.menu-list');
-const menuMobileLi = menuMobile.querySelectorAll('li a');
+const menuMobileLi = menuMobile.querySelectorAll('.menu-list__links');
+const menuMobileAnchor = menuMobile.querySelectorAll('.menu-list__links a');
 const navLogoA = document.querySelector('.logo a');
 
 // Function that allows opening and closing the menu
 
-function openMenu(e) {
+function openMenu() {
   hamburguerIcon.classList.toggle('hidden');
   closeIcon.classList.toggle('hidden');
   menuMobile.classList.toggle('hidden');
+  let timeOutTime = 125;
+  menuMobileLi.forEach((Element) => {
+    setTimeout(() => {
+      Element.classList.toggle('menu-list__links--on');
+    }, timeOutTime);
+    timeOutTime += 50;
+  });
   const mediaQuerie = window.matchMedia('(max-width: 767px)');
   if (mediaQuerie.matches) {
     body.classList.toggle('overflow-hidden');
   }
+}
+
+function closeMenu(e) {
   e.preventDefault();
+  hamburguerIcon.classList.toggle('hidden');
+  closeIcon.classList.toggle('hidden');
+  menuMobile.classList.toggle('hidden');
+  menuMobileLi.forEach((Element) => {
+    Element.classList.toggle('menu-list__links--on');
+  });
+  const mediaQuerie = window.matchMedia('(max-width: 767px)');
+  if (mediaQuerie.matches) {
+    body.classList.toggle('overflow-hidden');
+  }
   document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({
     behavior: 'smooth',
   });
@@ -36,7 +58,7 @@ function scrollToTop(e) {
 
 hamburguerIcon.addEventListener('click', openMenu);
 closeIcon.addEventListener('click', openMenu);
-menuMobileLi.forEach((Element) => Element.addEventListener('click', openMenu));
+menuMobileAnchor.forEach((Element) => Element.addEventListener('click', closeMenu));
 navLogoA.addEventListener('click', scrollToTop);
 
 // M O D A L S
@@ -52,7 +74,6 @@ const modalInformation = [
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
     tech: [
       'html',
-      'ruby on Rails',
       'css',
       'javaScript',
     ],

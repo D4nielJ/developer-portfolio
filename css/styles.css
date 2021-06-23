@@ -151,6 +151,11 @@ header {
   margin-right: 12px;
 }
 
+.form__error-msg i {
+  margin-right: 8px;
+  color: #ff2b35;
+}
+
 .social-media-container i {
   font-size: 2.2rem;
   margin-right: 16px;
@@ -283,10 +288,12 @@ header {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 5rem 0;
   transition: visibility 0s, opacity 0.7s ease-out;
   opacity: 0%;
   visibility: hidden;
+  overflow-y: scroll;
 }
 
 .modal--active {
@@ -420,7 +427,6 @@ header {
 }
 
 .modal__button {
-  margin-right: 12px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -454,6 +460,10 @@ header {
   background: #6070ff;
   color: #fff;
   box-shadow: 0 8px 16px #4053fc3d;
+}
+
+.modal__button--see-live {
+  margin-right: 12px;
 }
 
 .modal__icon-button {
@@ -636,6 +646,29 @@ header {
   background: #172b4d;
 }
 
+.form__error-msg {
+  position: absolute;
+  top: -30px;
+  opacity: 0;
+  margin-bottom: 6px;
+  transition: position 0s, visibility 0s, top 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.form__error-msg--active {
+  position: relative;
+  top: -10px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.form__error-msg p {
+  margin: inherit;
+  font-size: 1.4rem;
+  padding: 6px 12px;
+  background: #172b4d;
+  border-radius: 8px;
+}
+
 .hidden {
   display: none;
 }
@@ -705,11 +738,22 @@ header {
     padding: 80px 10%;
   }
 
-  .menu-list ul li {
+  .menu-list__links {
     margin-bottom: 24px;
     font-weight: 600;
     font-size: 3.2rem;
     line-height: 44px;
+    position: relative;
+    top: -25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.5s ease-out, opacity 0.3s ease-out;
+  }
+
+  .menu-list__links--on {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -829,10 +873,6 @@ header {
   .contact-me-form li {
     display: block;
     width: 100%;
-  }
-
-  .form-input-box {
-    border-radius: 0;
   }
 
   .form-button {
