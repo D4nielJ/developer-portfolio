@@ -43,3 +43,29 @@ function storageAvailable(type) {
           (storage && storage.length !== 0);
   }
 }
+
+
+if (storageAvailable('localStorage')) {
+
+  const setFormValues = () => {
+    let formData = {
+      name: form.contact_name.value,
+      email: form.contact_email.value,
+      message: form.contact_message.value,
+    }
+  
+    localStorage.setItem('formData', JSON.stringify(formData));
+  }
+
+  form.contact_name.addEventListener('change', setFormValues);
+  form.contact_email.addEventListener('change', setFormValues);
+  form.contact_message.addEventListener('change', setFormValues);
+
+
+  let {name, email, message} = JSON.parse(localStorage.getItem('formData'));
+
+  if (name !== '' || email !== '' || message !== '') {
+    form.contact_name.value = name;
+    form.contact_email.value = email;
+    form.contact_message.value = message;
+  }
