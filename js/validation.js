@@ -51,14 +51,14 @@ const checkLocalStorage = () => {
         email: form.user_email.value,
         message: form.user_message.value,
       };
-  
+
       localStorage.setItem('formData', JSON.stringify(formData));
     };
-  
+
     form.user_name.addEventListener('change', setFormValues);
     form.user_email.addEventListener('change', setFormValues);
     form.user_message.addEventListener('change', setFormValues);
-  
+
     // Retrieve Values from Local Storage
     let name = '';
     let email = '';
@@ -70,14 +70,14 @@ const checkLocalStorage = () => {
       message = '';
     } else {
       ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
-    } 
+    }
 
-   if (name !== '' || email !== '' || message !== '') {
+    if (name !== '' || email !== '' || message !== '') {
       form.user_name.value = name;
       form.user_email.value = email;
       form.user_message.value = message;
     }
   }
-}
+};
 
 window.onload = checkLocalStorage;
