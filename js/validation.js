@@ -47,6 +47,7 @@ function storageAvailable(type) {
 
 if (storageAvailable('localStorage')) {
 
+  // Save input values to local storage
   const setFormValues = () => {
     let formData = {
       name: form.user_name.value,
@@ -61,7 +62,6 @@ if (storageAvailable('localStorage')) {
   form.user_email.addEventListener('change', setFormValues);
   form.user_message.addEventListener('change', setFormValues);
 
-
   let {name, email, message} = JSON.parse(localStorage.getItem('formData'));
 
   if (name !== '' || email !== '' || message !== '') {
@@ -69,4 +69,16 @@ if (storageAvailable('localStorage')) {
     form.user_email.value = email;
     form.user_message.value = message;
   }
+
+  // Reset button
+  const resetButton = document.querySelector('.form-button--reset');
+
+  const resetForm = () => {
+    form.user_name.value = '';
+    form.user_email.value = '';
+    form.user_message.value = '';
+    localStorage.removeItem('formData');
+  }
+
+  resetButton.addEventListener('click', resetForm);
 }
