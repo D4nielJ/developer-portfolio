@@ -42,39 +42,42 @@ function storageAvailable(type) {
   }
 }
 
-if (storageAvailable('localStorage')) {
-  // Save input values to local storage
-  const setFormValues = () => {
-    const formData = {
-      name: form.user_name.value,
-      email: form.user_email.value,
-      message: form.user_message.value,
+const checkLocalStorage = () => {
+  if (storageAvailable('localStorage')) {
+    // Save input values to local storage
+    const setFormValues = () => {
+      const formData = {
+        name: form.user_name.value,
+        email: form.user_email.value,
+        message: form.user_message.value,
+      };
+  
+      localStorage.setItem('formData', JSON.stringify(formData));
     };
+  
+    form.user_name.addEventListener('change', setFormValues);
+    form.user_email.addEventListener('change', setFormValues);
+    form.user_message.addEventListener('change', setFormValues);
+  
+    // Retrieve Values from Local Storage
+    let name = '';
+    let email = '';
+    let message = '';
 
-    localStorage.setItem('formData', JSON.stringify(formData));
-  };
+    if (JSON.parse(localStorage.getItem('formData')) === null) {
+      name = '';
+      email = '';
+      message = '';
+    } else {
+      ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
+    } 
 
-  form.user_name.addEventListener('change', setFormValues);
-  form.user_email.addEventListener('change', setFormValues);
-  form.user_message.addEventListener('change', setFormValues);
-
-  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
-
-  if (name !== '' || email !== '' || message !== '') {
-    form.user_name.value = name;
-    form.user_email.value = email;
-    form.user_message.value = message;
+   if (name !== '' || email !== '' || message !== '') {
+      form.user_name.value = name;
+      form.user_email.value = email;
+      form.user_message.value = message;
+    }
   }
-
-  // Reset button
-  const resetButton = document.querySelector('.form-button--reset');
-
-  const resetForm = () => {
-    form.user_name.value = '';
-    form.user_email.value = '';
-    form.user_message.value = '';
-    localStorage.removeItem('formData');
-  };
-
-  resetButton.addEventListener('click', resetForm);
 }
+
+window.onload = checkLocalStorage;
