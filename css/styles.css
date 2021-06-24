@@ -642,8 +642,29 @@ header {
   color: #b3bac5;
 }
 
+.form-buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-button--reset {
+  background: #172b4d;
+  color: #fff;
+  border: unset;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
 .form-button:hover {
   background: #172b4d;
+}
+
+.form-button--reset:hover {
+  background: #ff2b35;
+}
+
+.form-button--reset:active {
+  background: #c01a22;
 }
 
 .form__error-msg {
@@ -871,12 +892,10 @@ header {
   }
 
   .contact-me-form li {
-    display: block;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-  }
-
-  .form-button {
-    margin: 0 auto;
+    justify-content: space-between;
   }
 
   .sr-only {
