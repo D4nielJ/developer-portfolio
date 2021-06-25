@@ -40,7 +40,7 @@ function closeMenu(e) {
   if (mediaQuerie.matches) {
     body.classList.toggle('overflow-hidden');
   }
-  document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({
+  document.querySelector(e.currentTarget).scrollIntoView({
     behavior: 'smooth',
   });
 }
@@ -148,13 +148,13 @@ const modalSeeSrc = document.querySelector('.modal__button--see-src');
 
 function openModal(project) {
   // let projectIndex = buttonSeeProject.indexOf('project');
-  modalTitle.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].title;
-  modalCompany.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].company;
-  modalRole.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].role;
-  modalYear.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].year;
+  modalTitle.textContent += modalInformation[buttonSeeProject.indexOf(project.target)].title;
+  modalCompany.textContent += modalInformation[buttonSeeProject.indexOf(project.target)].company;
+  modalRole.textContent += modalInformation[buttonSeeProject.indexOf(project.target)].role;
+  modalYear.textContent += modalInformation[buttonSeeProject.indexOf(project.target)].year;
   modalImg.src = modalInformation[buttonSeeProject.indexOf(project.target)].imgSrc;
-  modalDesc.textContent = modalInformation[buttonSeeProject.indexOf(project.target)].desc;
-  modalTech.innerHTML = '';
+  modalDesc.textContent += modalInformation[buttonSeeProject.indexOf(project.target)].desc;
+  modalTech.innerHTML += '';
   for (
     let i = 0;
     i < modalInformation[buttonSeeProject.indexOf(project.target)].tech.length;
@@ -164,8 +164,8 @@ function openModal(project) {
     li.innerHTML = `<li class="modal__tag">${modalInformation[buttonSeeProject.indexOf(project.target)].tech[i]}</li>`;
     modalTech.appendChild(li);
   }
-  modalSeeLive.href = modalInformation[buttonSeeProject.indexOf(project.target)].liveHREF;
-  modalSeeSrc.href = modalInformation[buttonSeeProject.indexOf(project.target)].sourceHREF;
+  modalSeeLive.href += modalInformation[buttonSeeProject.indexOf(project.target)].liveHREF;
+  modalSeeSrc.href += modalInformation[buttonSeeProject.indexOf(project.target)].sourceHREF;
   modal.classList.toggle('modal--active');
   modalWindow.classList.toggle('modal__window--transition');
   body.classList.toggle('overflow-hidden');
