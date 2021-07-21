@@ -66,19 +66,19 @@ navLogoA.addEventListener('click', scrollToTop);
 
 const modalInformation = [
   {
-    title: 'Tonic',
-    company: 'Canopy',
-    role: 'Back End Dev',
-    year: '2015',
-    imgSrc: './media/snapshoot-portfolio.png',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto sint, quae sit nostrum accusamus magnam blanditiis iusto in ducimus eligendi voluptatibus commodi.',
+    title: 'Minimalist',
+    company: 'Academic',
+    role: 'Front End Dev',
+    year: '2021',
+    imgSrc: './assets/minimalist/ss.png',
+    desc: 'Academic project developed with Vanilla JS focused on practicing ECMAS 2016 syntax and new methods such as new modules feature, arrow functions, let and const declarations, etc. Practicing Webpack was also in the scope of the project, how to start and manage a project with it and how to bundle it for production.',
     tech: [
       'html',
       'css',
       'javaScript',
     ],
-    liveHREF: 'https://d4nielj.github.io/hello-microverse/',
-    sourceHREF: 'https://github.com/D4nielJ/developer-portfolio',
+    liveHREF: 'https://jolly-wing-fd7a03.netlify.app/',
+    sourceHREF: 'https://github.com/D4nielJ/todo-list',
   }, {
     title: 'Multi-Post Stories',
     company: 'Facebook',
